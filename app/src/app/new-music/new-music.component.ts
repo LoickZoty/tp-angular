@@ -16,7 +16,7 @@ export class NewMusicComponent implements OnInit{
     artist: "",
     duration: "",
     date: new Date(),
-    style: [],
+    styles: [],
     picture: ""
   };
   id: number | null = null;

@@ -18,7 +18,6 @@ export class DetailMusicComponent implements OnInit{
     this.musicService.getMusic(id)
       .subscribe(music => {
         this.music = music;
-        console.log(music)
       });
   }
 

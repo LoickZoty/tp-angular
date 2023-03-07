@@ -19,13 +19,14 @@ import { NewMusicComponent } from './new-music/new-music.component';
 import {FormsModule} from "@angular/forms";
 import {DetailMusicComponent} from "./detail-music/detail-music.component";
 import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatFormFieldModule} from "@angular/material/form-field";
+import {RandomMusicComponent} from "./random-music/random-music.component";
 @NgModule({
   declarations: [
     AppComponent,
     BrowseMusicsComponent,
     NewMusicComponent,
     DetailMusicComponent,
+    RandomMusicComponent
   ],
   imports: [
     AppRoutingModule,
@@ -42,7 +43,6 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatCardModule,
     MatDatepickerModule,
     MatInputModule,
-    MatFormFieldModule,
     FormsModule,
     MatCheckboxModule,
   ],

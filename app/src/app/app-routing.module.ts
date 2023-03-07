@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {BrowseMusicsComponent} from "./browse-musics/browse-musics.component";
 import {NewMusicComponent} from "./new-music/new-music.component";
 import {DetailMusicComponent} from "./detail-music/detail-music.component";
+import {RandomMusicComponent} from "./random-music/random-music.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'editMusic/:id',
     component: NewMusicComponent
+  },
+  {
+    path: 'randomMusic',
+    component: RandomMusicComponent
   }
 ];
 

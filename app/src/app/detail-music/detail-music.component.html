@@ -15,7 +15,7 @@
     <mat-card-subtitle>{{music.artist}}</mat-card-subtitle>
     <mat-card-subtitle>Durée : {{music.duration}}</mat-card-subtitle>
     <mat-card-subtitle>Crée le : {{music.date}}</mat-card-subtitle>
-    <mat-card-subtitle>Style : {{music.style.join(" - ")}}</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="music && music.styles">Style : {{music.styles.join(" - ")}}</mat-card-subtitle>
     <mat-card-content>
       {{music.description}}
     </mat-card-content>

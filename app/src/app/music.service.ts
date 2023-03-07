@@ -13,7 +13,7 @@ type Music = {
   artist: string,
   duration: string,
   date: Date,
-  style: string[],
+  styles: string[],
   picture: string,
 }
 @Injectable({
@@ -31,6 +31,10 @@ export class MusicService {
 
   getMusic(id : number) : Observable<Music>{
     return this.http.get<Music>(`${this.musicUrl}/${id}`);
+  }
+
+  getMusicRandom() : Observable<Music>{
+    return this.http.get<Music>(`${this.musicUrl}/random`);
   }
 
   createRecipe(music: Music) {
