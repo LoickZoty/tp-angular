@@ -1,0 +1,23 @@
+<mat-card *ngIf="music != null">
+    <div id="btn-container" *ngIf="id != null">
+      <button mat-icon-button type="button" (click)="editMusic(music.id)">
+        <img src="/assets/pencil.png"/>
+      </button>
+      <button mat-icon-button type="button" (click)="deleteMusic(music.id)">
+        <img src="/assets/delete.png"/>
+      </button>
+    </div>
+  <mat-card-header>
+    <img mat-card-sm-image src="{{music.picture}}">
+    <mat-card-title>
+      {{music.title}}
+    </mat-card-title>
+    <mat-card-subtitle>{{music.artist}}</mat-card-subtitle>
+    <mat-card-subtitle>Durée : {{music.duration}}</mat-card-subtitle>
+    <mat-card-subtitle>Crée le : {{music.date}}</mat-card-subtitle>
+    <mat-card-subtitle>Style : {{music.style.join(" - ")}}</mat-card-subtitle>
+    <mat-card-content>
+      {{music.description}}
+    </mat-card-content>
+  </mat-card-header>
+</mat-card>

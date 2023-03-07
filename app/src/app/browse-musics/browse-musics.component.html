@@ -1,0 +1,5 @@
+<mat-nav-list>
+  <a mat-list-item [routerLink]="['/music', music.id]" routerLinkActive="true" *ngFor="let music of musics" >
+    <app-detail-music [music]="music"></app-detail-music>
+  </a>
+</mat-nav-list>

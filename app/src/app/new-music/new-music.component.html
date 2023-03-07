@@ -1,0 +1,37 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Titre</mat-label>
+    <input matInput name="title" [(ngModel)]="music.title">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <input matInput name="description" [(ngModel)]="music.description">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Album</mat-label>
+    <input matInput name="album" [(ngModel)]="music.album">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Artiste</mat-label>
+    <input matInput name="artist" [(ngModel)]="music.artist">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Durée</mat-label>
+    <input matInput name="duration" [(ngModel)]="music.duration">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Album photo URL</mat-label>
+    <input matInput name="imgSrc" [(ngModel)]="music.picture">
+  </mat-form-field>
+  <button type="button" mat-raised-button (click)="save()">{{buttonTitle}}</button>
+</form>
+
+<!--id: number,-->
+<!--title: string,-->
+<!--description: string,-->
+<!--album: string,-->
+<!--artist: string,-->
+<!--duration: string,-->
+<!--date: Date,-->
+<!--style: [],-->
+<!--picture: string,-->

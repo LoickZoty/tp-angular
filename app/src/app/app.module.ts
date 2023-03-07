@@ -10,23 +10,22 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {AppRoutingModule} from "./app-routing.module";
-import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
-import { MyRecipesComponent } from './my-recipes/my-recipes.component';
-import { BrowseRecipesComponent } from './browse-recipes/browse-recipes.component';
+import { BrowseMusicsComponent } from './browse-musics/browse-musics.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
-import { NewRecipeComponent } from './new-recipe/new-recipe.component';
+import { NewMusicComponent } from './new-music/new-music.component';
 import {FormsModule} from "@angular/forms";
-import {YouTubePlayer, YouTubePlayerModule} from "@angular/youtube-player";
+import {DetailMusicComponent} from "./detail-music/detail-music.component";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatFormFieldModule} from "@angular/material/form-field";
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeDetailComponent,
-    MyRecipesComponent,
-    BrowseRecipesComponent,
-    NewRecipeComponent,
+    BrowseMusicsComponent,
+    NewMusicComponent,
+    DetailMusicComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -43,8 +42,9 @@ import {YouTubePlayer, YouTubePlayerModule} from "@angular/youtube-player";
     MatCardModule,
     MatDatepickerModule,
     MatInputModule,
+    MatFormFieldModule,
     FormsModule,
-    YouTubePlayerModule
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

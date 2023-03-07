@@ -1,30 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {RecipeDetailComponent} from "./recipe-detail/recipe-detail.component";
-import {MyRecipesComponent} from "./my-recipes/my-recipes.component";
-import {BrowseRecipesComponent} from "./browse-recipes/browse-recipes.component";
-import {NewRecipeComponent} from "./new-recipe/new-recipe.component";
+import {BrowseMusicsComponent} from "./browse-musics/browse-musics.component";
+import {NewMusicComponent} from "./new-music/new-music.component";
+import {DetailMusicComponent} from "./detail-music/detail-music.component";
 
 const routes: Routes = [
   {
-    path: 'recipe-detail/:id',
-    component: RecipeDetailComponent
+    path: 'music',
+    component: BrowseMusicsComponent
   },
   {
-    path: 'my-recipes/:id',
-    component: MyRecipesComponent
+    path: 'music/:id',
+    component: DetailMusicComponent
   },
   {
-    path: 'browse',
-    component: BrowseRecipesComponent
+    path: 'newMusic',
+    component: NewMusicComponent
   },
   {
-    path: 'newRecipe',
-    component: NewRecipeComponent
-  },
-  {
-    path: 'edit-recipe/:id',
-    component: NewRecipeComponent
+    path: 'editMusic/:id',
+    component: NewMusicComponent
   }
 ];
 
